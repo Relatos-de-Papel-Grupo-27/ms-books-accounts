@@ -3,6 +3,7 @@ package com.unir.accounts.service;
 import com.unir.accounts.data.model.Account;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface AccountService {
 	
@@ -10,6 +11,6 @@ public interface AccountService {
 
 	List<Account> getAccounts();
 
-	Account getAccountById(Long id);
+	Optional<Account> getAccountById(Long id);
 
 }
